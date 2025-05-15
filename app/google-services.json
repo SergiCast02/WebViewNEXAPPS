@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "572853302922",
+    "project_id": "nexus-7798a",
+    "storage_bucket": "nexus-7798a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572853302922:android:24016ff38b3e19b12f9f73",
+        "android_client_info": {
+          "package_name": "com.nexus.nexapps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS0zZjnss9DJvLBXIlULLZ3pV-wAXpXI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

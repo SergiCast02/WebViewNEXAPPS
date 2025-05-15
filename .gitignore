@@ -1,0 +1,45 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos del sistema de compilación
+/build/
+**/build/
+.gradle/
+local.properties
+
+# Archivos de Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Archivos de configuración del sistema operativo
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Archivos de log
+*.log
+
+# Archivos generados por lint
+lint/reports/
+lint/intermediates/
+
+# Archivos del NDK
+.externalNativeBuild/
+
+# Archivos de configuración de empaquetado
+.cxx/
+
+# Archivos del sistema de caché de Android Studio
+.caches/
+captures/
+output.json
+
+# Ignorar el archivo generado por Android Studio cuando usas versiones específicas de JDK
+.gradle/
+
+# Archivos de configuración para pruebas
+test-output/
