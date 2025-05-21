@@ -95,7 +95,9 @@ public class MainActivityJava extends AppCompatActivity {
             runOnUiThread(this::injectFCMTokenIfReady);
         });
 
-        web.loadUrl("https://apps.nexushn.com/nexapps/login");
+        web.loadUrl("https://testing.apps.nexushn.com/nexapps/login");
+        // web.loadUrl("https://apps.nexushn.com/nexapps/login");
+        // web.loadUrl("https://pedidos.nexushn.com");
     }
 
     // ------------------ PERMISOS CÁMARA / AUDIO ------------------

@@ -109,13 +109,27 @@ public class MyFirebaseService extends FirebaseMessagingService {
                         .add("token", fcmToken)
                         .build();
 
-                Request req = new Request.Builder()
+//                Request req = new Request.Builder()
+//                        .url("https://pedidos.nexushn.com/api/fcm/register/")
+//                        .addHeader("Content-Type", "application/x-www-form-urlencoded")
+//                        .addHeader("X-CSRFToken", finalCsrf)
+//                        .addHeader("Cookie", cookies)
+//                        .post(body)
+//                        .build();
+
+                Request.Builder builder = new Request.Builder()
                         .url("https://pedidos.nexushn.com/api/fcm/register/")
-                        .addHeader("Content-Type", "application/x-www-form-urlencoded")
-                        .addHeader("X-CSRFToken", finalCsrf)
-                        .addHeader("Cookie", cookies)
-                        .post(body)
-                        .build();
+                        .addHeader("Content-Type", "application/x-www-form-urlencoded");
+
+                if (finalCsrf != null && !finalCsrf.isEmpty()) {
+                    builder.addHeader("X-CSRFToken", finalCsrf);
+                }
+                if (cookies != null && !cookies.isEmpty()) {
+                    builder.addHeader("Cookie", cookies);
+                }
+
+                Request req = builder.post(body).build();
+
 
                 try (Response r = client.newCall(req).execute()) {
                     if (r.isSuccessful()) {
